@@ -1,0 +1,12 @@
+.dragthing {
+    background: lightgrey;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 250px;
+}
+
+#dragparentparent {
+    display: flex;
+}

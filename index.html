@@ -2,7 +2,7 @@
 <html ng-app="dragAndDrop" lang="pt-BR">
 
 <head>
-    <title>drag and Drop with Dragula</title>
+    <title>Drag and Drop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bevacqua/dragula/dist/dragula.min.css">
     <link href="./lib/bootstrap/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/app.css">
@@ -54,6 +54,11 @@
                     dragula
                 </div>
             </div>
+        </div>
+        </hr>
+        <h4>Usando ng-repeat</h4>
+        <div class='container' id="dragparent3" dragula='"dragparent3"' dragula-model='many'>
+            <div ng-repeat='text in many' class="dragthing" ng-bind='text'></div>
         </div>
     </div>
     <div ng-include=" './view/footer.html' "></div>

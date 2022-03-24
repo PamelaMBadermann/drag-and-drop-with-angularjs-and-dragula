@@ -35,3 +35,7 @@
 #dragparentparent {
     display: flex;
 }
+
+.container .ex-moved {
+    background-color: #e74c3c;
+}

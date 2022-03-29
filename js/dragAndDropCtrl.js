@@ -14,7 +14,9 @@ angular.module("dragAndDrop").controller("dragAndDropCtrl", function ($scope,) {
     $scope.many = ['The', 'possibilities', 'are', 'endless!', 'Explore', 'them'];
 
     $scope.$on('dragparent3.drop', function (e, el, target, source) {
-        if (target[0].id == 'done') {
+        console.log('done');
+
+        if (target[0].id === "done" && source[0].id !== "done") {
             console.log('done');
         }
     });

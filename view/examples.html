@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="dragAndDrop" lang="pt-BR">
+
+<head>
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-dragula/1.2.8/dragula.css">
+    <link href="../lib/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/app.css">
+</head>
+
+<body ng-controller="exampleCtrl" ng-init="init()">
+    <div class=" jumbotron col-8">
+        <h3>{{app}}</h3>
+        <div id="second-bag" dragula='"second-bag"'>
+            <div ng-repeat="item in items" ng-bind="item" dragula-model="items" dragula="'my-bag'" class="dragthing">
+            </div>
+        </div>
+        <div ng-include=" '../view/footer.html' "></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-dragula/1.2.8/angular-dragula.js"></script>
+        <script src="../lib/angular/angular.min.js"></script>
+        <script src="../lib/angular/angular-locale_pt-br.js"></script>
+        <script src="../lib/angular/angular-messages.min.js"></script>
+        <script src="../js/examplesCtrl.js"></script>
+</body>
+
+</html>
